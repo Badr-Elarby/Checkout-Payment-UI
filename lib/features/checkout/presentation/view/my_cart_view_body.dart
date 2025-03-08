@@ -1,4 +1,6 @@
 import 'package:checkout_payment_ui/core/utils/styles.dart';
+import 'package:checkout_payment_ui/core/widgets/custom_button.dart';
+import 'package:checkout_payment_ui/features/checkout/presentation/view/payment_details.dart';
 import 'package:checkout_payment_ui/features/checkout/presentation/view/widgets/cart_info_item_widget.dart';
 import 'package:checkout_payment_ui/features/checkout/presentation/view/widgets/total_price_widget.dart';
 import 'package:flutter/material.dart';
@@ -12,9 +14,11 @@ class MyCartViewBody extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20.0),
       child: Column(
         children: [
-          Image.asset(
-            'assets/images/basket_image.png',
-            height: 300,
+          Expanded(
+            child: Image.asset(
+              'assets/images/basket_image.png',
+              height: 10,
+            ),
           ),
           const SizedBox(
             height: 20,
@@ -40,24 +44,22 @@ class MyCartViewBody extends StatelessWidget {
             title: 'Total Price',
             value: r'35.34$',
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
-          Container(
-            height: 60,
-            width: 300,
-            decoration: ShapeDecoration(
-                color: Colors.green,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15),
-                )),
-            child: Center(
-              child: Text(
-                'complete payment',
-                style: Styles.style25,
-              ),
-            ),
-          )
+          CustomButton(
+            onTap: () {
+              print('tapped !');
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) {
+                    return const PaymentDetailsView();
+                  },
+                ),
+              );
+            },
+          ),
+          const SizedBox(height: 20),
         ],
       ),
     );
