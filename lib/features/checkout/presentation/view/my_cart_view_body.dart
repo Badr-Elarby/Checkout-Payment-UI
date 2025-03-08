@@ -1,4 +1,3 @@
-import 'package:checkout_payment_ui/core/utils/styles.dart';
 import 'package:checkout_payment_ui/core/widgets/custom_button.dart';
 import 'package:checkout_payment_ui/features/checkout/presentation/view/payment_details.dart';
 import 'package:checkout_payment_ui/features/checkout/presentation/view/widgets/cart_info_item_widget.dart';

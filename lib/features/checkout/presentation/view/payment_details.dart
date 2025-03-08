@@ -1,4 +1,5 @@
 import 'package:checkout_payment_ui/core/widgets/custom_app_bar.dart';
+import 'package:checkout_payment_ui/features/checkout/presentation/view/widgets/payment_details_view_body.dart';
 import 'package:flutter/material.dart';
 
 class PaymentDetailsView extends StatelessWidget {
@@ -10,6 +11,7 @@ class PaymentDetailsView extends StatelessWidget {
       appBar: BuildAppBar(
         title: 'Payment Details',
       ),
+      body: PaymentDetailsViewBody(),
     );
   }
 }

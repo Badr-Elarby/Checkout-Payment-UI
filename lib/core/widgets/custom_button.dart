@@ -21,7 +21,7 @@ class CustomButton extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(15),
             )),
-        child: Center(
+        child: const Center(
           child: Text(
             'complete payment',
             style: Styles.style25,
