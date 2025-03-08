@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # checkout_payment_ui
 
 A new Flutter project.
@@ -14,3 +15,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# Checkout-Payment-UI
+>>>>>>> fa05a8c472dcb54cc3f9bac5cf2c71458400774d
