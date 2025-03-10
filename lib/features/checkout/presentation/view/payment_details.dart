@@ -11,7 +11,7 @@ class PaymentDetailsView extends StatelessWidget {
       appBar: BuildAppBar(
         title: 'Payment Details',
       ),
-      body: PaymentDetailsViewBody(),
+      body: const PaymentDetailsViewBody(),
     );
   }
 }

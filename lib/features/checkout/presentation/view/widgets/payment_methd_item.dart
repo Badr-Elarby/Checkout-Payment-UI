@@ -10,9 +10,17 @@ class PaymentMethodItem extends StatelessWidget {
   final bool isActive;
   final String image;
   @override
+
+  /// Builds an animated container widget representing a payment method item.
+  ///
+  /// The container has a fixed width and height, and its border and shadow
+  /// colors change based on the `isActive` state. It includes an SVG picture
+  /// centered within a white container. The animation duration is 300
+  /// milliseconds.
+
   Widget build(BuildContext context) {
     return AnimatedContainer(
-      duration: Duration(milliseconds: 300),
+      duration: const Duration(milliseconds: 300),
       width: 103,
       height: 62,
       decoration: ShapeDecoration(
@@ -30,7 +38,7 @@ class PaymentMethodItem extends StatelessWidget {
                   ? const Color(0xFF34A853)
                   : const Color.fromARGB(255, 255, 255, 255),
               blurRadius: 8,
-              offset: Offset(0, 0),
+              offset: const Offset(0, 0),
               spreadRadius: 0,
             )
           ]),
